@@ -1,16 +1,26 @@
 PODS:
+  - Charts (3.6.0):
+    - Charts/Core (= 3.6.0)
+  - Charts/Core (3.6.0)
   - CurrencyTextField (2.3)
+  - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
+  - Charts
   - CurrencyTextField
+  - TinyConstraints
 
 SPEC REPOS:
   trunk:
+    - Charts
     - CurrencyTextField
+    - TinyConstraints
 
 SPEC CHECKSUMS:
+  Charts: b1e3a1f5a1c9ba5394438ca3b91bd8c9076310af
   CurrencyTextField: 75d8ee80cf245925684b34c9a49ba886f258e2dc
+  TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: ed06579bf5e701b06c630fc186466a3fe9443894
+PODFILE CHECKSUM: dbaecddbb72c65f6ec6517a0cf386923ce6a5340
 
 COCOAPODS: 1.10.1

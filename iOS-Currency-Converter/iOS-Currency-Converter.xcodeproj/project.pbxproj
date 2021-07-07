@@ -3,19 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		E40985B995B933D28FF41A71 /* Pods_iOS_Currency_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1565576460C5C3B7D92247E8 /* Pods_iOS_Currency_Converter.framework */; };
+		FE4479C92694CB970061C653 /* ShowTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4479C82694CB970061C653 /* ShowTrendViewController.swift */; };
+		FE4479CB2694EE1D0061C653 /* HistoricData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4479CA2694EE1D0061C653 /* HistoricData.swift */; };
+		FE4479CE269536E20061C653 /* TrendChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4479CD269536E20061C653 /* TrendChart.swift */; };
 		FED6CA37269361CA000878F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA36269361CA000878F2 /* AppDelegate.swift */; };
 		FED6CA39269361CA000878F2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA38269361CA000878F2 /* SceneDelegate.swift */; };
-		FED6CA3B269361CA000878F2 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA3A269361CA000878F2 /* DashboardViewController.swift */; };
+		FED6CA3B269361CA000878F2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA3A269361CA000878F2 /* MainViewController.swift */; };
 		FED6CA3E269361CA000878F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED6CA3C269361CA000878F2 /* Main.storyboard */; };
 		FED6CA40269361CB000878F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED6CA3F269361CB000878F2 /* Assets.xcassets */; };
 		FED6CA43269361CB000878F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED6CA41269361CB000878F2 /* LaunchScreen.storyboard */; };
 		FED6CA4F26936264000878F2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA4E26936264000878F2 /* APIService.swift */; };
-		FED6CA522693652D000878F2 /* PriceConvert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA512693652D000878F2 /* PriceConvert.swift */; };
+		FED6CA522693652D000878F2 /* CurrencyConverted.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA512693652D000878F2 /* CurrencyConverted.swift */; };
 		FED6CA552693A91F000878F2 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA542693A91F000878F2 /* Double.swift */; };
 		FED6CA592693A942000878F2 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA582693A942000878F2 /* String.swift */; };
 		FED6CA5B2693AE08000878F2 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED6CA5A2693AE08000878F2 /* ActivityIndicator.swift */; };
@@ -28,16 +31,19 @@
 		09AF72D6598156CD77B6ED4D /* Pods-iOS-Currency-Converter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Currency-Converter.release.xcconfig"; path = "Target Support Files/Pods-iOS-Currency-Converter/Pods-iOS-Currency-Converter.release.xcconfig"; sourceTree = "<group>"; };
 		1565576460C5C3B7D92247E8 /* Pods_iOS_Currency_Converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOS_Currency_Converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54F5E30ACA0F04BEA8E090FB /* Pods-iOS-Currency-Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-Currency-Converter.debug.xcconfig"; path = "Target Support Files/Pods-iOS-Currency-Converter/Pods-iOS-Currency-Converter.debug.xcconfig"; sourceTree = "<group>"; };
+		FE4479C82694CB970061C653 /* ShowTrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowTrendViewController.swift; sourceTree = "<group>"; };
+		FE4479CA2694EE1D0061C653 /* HistoricData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricData.swift; sourceTree = "<group>"; };
+		FE4479CD269536E20061C653 /* TrendChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendChart.swift; sourceTree = "<group>"; };
 		FED6CA33269361CA000878F2 /* iOS-Currency-Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Currency-Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED6CA36269361CA000878F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FED6CA38269361CA000878F2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FED6CA3A269361CA000878F2 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		FED6CA3A269361CA000878F2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FED6CA3D269361CA000878F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FED6CA3F269361CB000878F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FED6CA42269361CB000878F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FED6CA44269361CB000878F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FED6CA4E26936264000878F2 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		FED6CA512693652D000878F2 /* PriceConvert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceConvert.swift; sourceTree = "<group>"; };
+		FED6CA512693652D000878F2 /* CurrencyConverted.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyConverted.swift; sourceTree = "<group>"; };
 		FED6CA542693A91F000878F2 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		FED6CA582693A942000878F2 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		FED6CA5A2693AE08000878F2 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
@@ -64,7 +70,6 @@
 				54F5E30ACA0F04BEA8E090FB /* Pods-iOS-Currency-Converter.debug.xcconfig */,
 				09AF72D6598156CD77B6ED4D /* Pods-iOS-Currency-Converter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,6 +79,14 @@
 				1565576460C5C3B7D92247E8 /* Pods_iOS_Currency_Converter.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE4479CC269536C10061C653 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE4479CD269536E20061C653 /* TrendChart.swift */,
+			);
+			path = "Custom Views";
 			sourceTree = "<group>";
 		};
 		FED6CA2A269361CA000878F2 = {
@@ -123,7 +136,8 @@
 		FED6CA4B269361E9000878F2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FED6CA3A269361CA000878F2 /* DashboardViewController.swift */,
+				FED6CA3A269361CA000878F2 /* MainViewController.swift */,
+				FE4479C82694CB970061C653 /* ShowTrendViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +145,7 @@
 		FED6CA4C26936202000878F2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FE4479CC269536C10061C653 /* Custom Views */,
 				FED6CA3C269361CA000878F2 /* Main.storyboard */,
 			);
 			path = Views;
@@ -148,7 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				FED6CA5C2693C666000878F2 /* Currency.swift */,
-				FED6CA512693652D000878F2 /* PriceConvert.swift */,
+				FED6CA512693652D000878F2 /* CurrencyConverted.swift */,
+				FE4479CA2694EE1D0061C653 /* HistoricData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,15 +302,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE4479CE269536E20061C653 /* TrendChart.swift in Sources */,
 				FED6CA5D2693C666000878F2 /* Currency.swift in Sources */,
-				FED6CA522693652D000878F2 /* PriceConvert.swift in Sources */,
-				FED6CA3B269361CA000878F2 /* DashboardViewController.swift in Sources */,
+				FED6CA522693652D000878F2 /* CurrencyConverted.swift in Sources */,
+				FED6CA3B269361CA000878F2 /* MainViewController.swift in Sources */,
 				FED6CA37269361CA000878F2 /* AppDelegate.swift in Sources */,
 				FED6CA4F26936264000878F2 /* APIService.swift in Sources */,
 				FED6CA602693C90F000878F2 /* Constants.swift in Sources */,
 				FED6CA5B2693AE08000878F2 /* ActivityIndicator.swift in Sources */,
 				FED6CA592693A942000878F2 /* String.swift in Sources */,
 				FED6CA622693DAA6000878F2 /* Alert.swift in Sources */,
+				FE4479CB2694EE1D0061C653 /* HistoricData.swift in Sources */,
+				FE4479C92694CB970061C653 /* ShowTrendViewController.swift in Sources */,
 				FED6CA552693A91F000878F2 /* Double.swift in Sources */,
 				FED6CA39269361CA000878F2 /* SceneDelegate.swift in Sources */,
 			);

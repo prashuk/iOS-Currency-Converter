@@ -1,2 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-iOS-Currency-Converter/Pods-iOS-Currency-Converter-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
 ${BUILT_PRODUCTS_DIR}/CurrencyTextField/CurrencyTextField.framework
+${BUILT_PRODUCTS_DIR}/TinyConstraints/TinyConstraints.framework
