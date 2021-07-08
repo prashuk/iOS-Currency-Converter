@@ -14,8 +14,10 @@ class ShowTrendViewController: UIViewController {
     let service = APIService()
     let lineChartView = TrendChart()
     
-    var trendBetween: (from: String, to: String)!
+    var trendBetween: (from: String, to: String, todayPrice: Double)!
 
+    @IBOutlet weak var currentPriceLbl: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,12 +26,16 @@ class ShowTrendViewController: UIViewController {
     }
     
     func setChart() {
+        currentPriceLbl.text = "1 \(trendBetween.from) = \(trendBetween.todayPrice) \(trendBetween.to)"
+        
         lineChartView.delegate = self
         
         view.addSubview(lineChartView)
-        lineChartView.centerInSuperview()
-        lineChartView.width(to: view)
-        lineChartView.heightToWidth(of: view)
+        lineChartView.centerXToSuperview()
+        lineChartView.top(to: view, offset: 100)
+        lineChartView.horizontalToSuperview(insets: .left(20) + .right(20))
+        lineChartView.width(view.frame.width - 40)
+        lineChartView.height(view.frame.width * 0.80)
     }
     
     func setdata() {
@@ -53,7 +59,7 @@ class ShowTrendViewController: UIViewController {
             }
             
             DispatchQueue.main.async {
-                let set = LineChartDataSet(entries: yValues)
+                let set = LineChartDataSet(entries: yValues, label: trendBetween.to)
                 
                 set.mode = .cubicBezier
                 set.drawCirclesEnabled = false
@@ -66,13 +72,11 @@ class ShowTrendViewController: UIViewController {
                 lineChartView.data = data
             }
         }
-        
     }
-
 }
 
 extension ShowTrendViewController: ChartViewDelegate {
     func chartValueSelected(_ chartView: ChartViewBase, entry: ChartDataEntry, highlight: Highlight) {
-        print(entry)
+        currentPriceLbl.text = "1 \(trendBetween.from) = \(entry.y.toString()) \(trendBetween.to)"
     }
 }

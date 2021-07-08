@@ -12,4 +12,9 @@ extension Double {
     func toString() -> String {
         return String(self)
     }
+    
+    func roundToTwo() -> Double {
+        let str = String(format: "%.2f", self)
+        return Double(str)!
+    }
 }

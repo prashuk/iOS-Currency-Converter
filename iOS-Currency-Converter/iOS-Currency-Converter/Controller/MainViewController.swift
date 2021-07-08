@@ -30,6 +30,7 @@ class MainViewController: UIViewController {
     
     var sourceCurrencies = Constants.currencies
     var destinationCurrencies = Constants.currencies
+    var unitAmount = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -98,15 +99,14 @@ class MainViewController: UIViewController {
 
             DispatchQueue.main.async {
                 let convertedAmount = price.rates[destination]
-                var unitAmount = (convertedAmount!/amount.toDouble())
-                unitAmount = Double(round(100 * unitAmount)/100)
+                self.unitAmount = (convertedAmount!/amount.toDouble()).roundToTwo()
 
                 self.sourceLbl.text = "\(Constants.currencies.filter{ $0.key == source.lowercased() }.first?.value ?? "") (\(source))"
                 self.sourceAmtLbl.text = price.amount.toString()
                 self.destinationLbl.text = "\(Constants.currencies.filter{ $0.key == destination.lowercased() }.first?.value ?? "") (\(destination))"
                 self.destinationAmtLbl.text = price.rates[destination]?.toString()
 
-                self.unitPriceLbl.text = "1 \(source) = \(unitAmount) \(destination)"
+                self.unitPriceLbl.text = "1 \(source) = \(self.unitAmount) \(destination)"
                 
                 self.showTrendBtn.isHidden = false
 
@@ -117,7 +117,7 @@ class MainViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let showTrendVC = segue.destination as! ShowTrendViewController
-        showTrendVC.trendBetween = (from: sourceTextField.text!, to: destinationTextField.text!)
+        showTrendVC.trendBetween = (from: sourceTextField.text!, to: destinationTextField.text!, todayPrice: unitAmount)
     }
     
 }

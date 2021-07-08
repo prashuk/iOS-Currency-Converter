@@ -11,7 +11,7 @@ struct APIService {
     
     let host = "api.frankfurter.app"
     
-    func convertCurrency(from source: String, to destination: String, for price: String, completionHandler: @escaping (CurrencyConverted) -> ()) {
+    func convertCurrency(from source: String, to destination: String, for price: String, completionHandler: @escaping (CurrencyConverter) -> ()) {
         
         let urlString = "https://\(host)/latest?amount=\(price)&from=\(source)&to=\(destination)"
         let url = URL(string: urlString)
@@ -24,7 +24,7 @@ struct APIService {
             }
             
             if let responseData = data {
-                let data = try! JSONDecoder().decode(CurrencyConverted.self, from: responseData)
+                let data = try! JSONDecoder().decode(CurrencyConverter.self, from: responseData)
                 completionHandler(data)
             }
         }

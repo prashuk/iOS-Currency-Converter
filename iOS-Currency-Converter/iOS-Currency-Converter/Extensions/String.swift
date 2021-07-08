@@ -9,7 +9,7 @@ import Foundation
 
 extension String {
     func toDouble() -> Double {
-        return Double(self) ?? 1.0
+        return Double(self) ?? 0.0
     }
     
     func isValidDouble() -> Bool {
